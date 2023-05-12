@@ -1,0 +1,190 @@
+/* SARTHAK SHUKLA MINOR PROJECT*/
+
+
+#include <stdio.h> 
+#include <conio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main() 
+{
+ int SBP;
+ int DBP; 
+ int opt;
+ int tgd;
+ int tcl;
+ int ldlc;
+ int hdlc;
+ int vldlc;
+ int bsf;
+ int bsp;
+ int bsr;
+
+printf("\n\n\n==============================================================================================================================\n\n\n");
+printf("\t\t Project by SARTHAK SHUKLA\n\n\t\tEnrollment no: 2101112038\n\n\t\tTitle of the paper : End Semester Project 1\n\n\t\tPaper Code : SDL-107\n\n\n");
+printf("\t\t\t**************************  Medical Result Analysis and Suggestions  **************************\n\n\n\t\t\t");
+printf("\n\n\n==============================================================================================================================\n\n\n");
+printf("\n\aWhat would you like to analyse about :\n1.Blood Pressure\n2.Lipid Profile\n3.Diabetes\n(for ex. Type '1' for Blood Pressure)   :  ");
+scanf("\t%d",&opt);
+if (opt == 1)
+{
+printf("\n\n\n\nYou Chose 1. BLOOD PRESSURE\n\n");
+printf("The force of circulating blood on the walls of the arteries. Blood pressure is taken using two measurements: \n\nSystolic : measured when the heart beats, when blood pressure is at its highest\n(Idle Systolic Blood Pressure should be between 90-120 mmHg)\n\nDiastolic : measured between heart beats, when blood pressure is at its lowest.\n(Idle Diastolic Blood Pressure should be between 60-80mmHg\n\n\n");
+printf("\nPlease Enter your Systolic Blood Pressure   : " ); 
+ scanf( "%d", &SBP );
+ 
+ if (SBP <= 120 && SBP >= 110) 
+  {
+    printf("mmHg\n\nYour Blood Pressure is quite NORMAL \n");
+    printf("\n\n\nThings you should do to keep your blood pressure under control : \n\n\nGetting at least 150 minutes of physical activity each week (about 30 minutes a day, 5 days a week) \n\n\nNot smoking. \n\n\nEating a healthy diet, including limiting sodium (salt) and alcohol. \n\n\nKeeping a healthy weight. \n\n\nManaging stress.\n\n\n\n\n");
+  } 
+ else if (SBP >= 90 && SBP <=109 ) 
+  {
+    printf("            Your Systolic Blood Pressure is In Range \n");
+    printf("\n\n Workout everyday \n\n Eat Healthy Food and try to cut off junk food \n\n Take maintainance of proper hygeine \n\n These activities also keep the DOCTOR away \n\n STAY SAFE ;)\n\n\n");
+  } 
+ else if (SBP < 90 ) 
+  { 
+    printf("\n\n                       HYPOTENTION\n\nYour Systolic Blood Pressure is low try to visit a doctor for proper medication \n Other activities you should mind as well\n\n\n1. Drink plenty of water\n2. Eat a balanced diet\n3. Eat smaller meals\n4. Limit or avoid alcohol\n5. Eat more salt\n6. Check your blood sugars\n7. Get your thyroid checked\n8. Wear compression stockings\n\n\n");
+  } 
+ else if(SBP > 121 && SBP < 139)
+  {
+    printf("\n\n\n                PRE-HYPERTENTION\n\n\nYour Blood pressure is quite high\n Symptoms of HIGH BLOOD PRESSURE   :\nModerate or severe headaches,\n anxiety,\n shortness of breath,\n nosebleeds,\n palpitations, or feeling of pulsations in the neck are some signs of high blood pressure\n");
+    
+    
+    printf("\nHere's what you can do :\n1.Lose extra pounds and watch your waistline.Blood pressure often increases as weight increases\n2.Exercise regularly.\n3.Eat a healthy diet.\n4.Reduce salt sodium in your diet.\n5.Limit alcohol.\n6.Quit smoking.\n7.Get a good night's sleep\n8.Reduce stress. \n\n\n");
+  }
+  else if (SBP >= 140)
+  {
+    printf("\n\n\n                    HYPERTENSIVE CRISIS\n\n\nStage 2 high blood pressure is 140/90 or higher. If you get a blood pressure reading of 180/110 or higher more than once, seek medical treatment right away.\n\n\n");
+  }
+  else
+  {
+    printf("please enter a valid response");
+  }
+  printf("Please Enter your Diastolic Blood Pressure  : ");
+  scanf("%d" , &DBP);
+
+ if (DBP <= 80 && DBP >= 60)
+ {
+  printf("mmHg\n\nIt's alright Sir/Mam !! all under control \n\n\n To maintain DBP (Diastolic Blood Pressure) \n\n\n Try consuming more of vegetables, such as spinach, broccoli, and carrots. \n\n\nFruits, such as apples, oranges, and bananas.\n\n\nFish, particularly those rich in omega-3 fatty acids.\n\n\nlean cuts of beef or pork.\n\n\nskinless chicken or turkey.\n\n\neggs.fat-free or low-fat dairy products, such as cheese and yogurt.\n\n\n");
+ }
+ else if (DBP > 80)
+ {
+  printf("\n\n\n                     DBP-HYPERTENTION\n\n\n");
+  printf("1. Increase activity and exercise more\n\n2. Lose weight if you're overweight\n\n3. Cut back on sugar and refined carbohydrates\n\n4. Eat more potassium and less sodium\n\n5. Eat garlic or take garlic extract supplements\n\n6. Eat some dark chocolate\n\n\n");
+  }
+ else if (DBP < 60 )
+ {
+  printf("\n\n\n                     DBP-HYPOTENTION");
+  printf("\n\n\nThe two most common ways to raise blood pressure are:\n\n\nEat more salt: Generally, the higher your sodium intake, the higher your blood pressure.\n\n\nStay hydrated: Make sure you are drinking water because fluids increase blood volume and help prevent dehydration.\n\n\n");
+ }
+ }
+ if (opt == 2)
+ {
+  printf("You Chose 2. Lipid Profile\n\n");
+  printf("A lipid profile or lipid panel is a panel of blood tests used to find abnormalities in lipids, such as cholesterol and triglycerides. The results of this test can identify certain genetic diseases and can determine approximate risks for cardiovascular disease, certain forms of pancreatitis, and other diseases.\n\nProfiles should range between : ");
+  printf("\n\n Tryglyceride .................135-160 Mg/dl");
+  printf("\n\n Total chlorestrol.............150-250 Mg/dl");
+  printf("\n\n HDL (Good) Cholestrol.........35-75 Mg/dl");
+  printf("\n\n LDL (Bad) Cholestrol..........upto-150 Mg/dl");
+  printf("\n\n VLDL Cholestrol...............5-30 Mg/dl");
+  printf("\n\n\nEnter your units (Mg/d) :\n1.Tryglyceride : ");
+  scanf("%d" , &tgd);
+  if ( tgd <=165 && tgd >= 135)
+  {
+     printf ("\tUnder control, Passed");
+  }
+  else 
+  {
+     printf("\n\nYour Tryglyceride level is inadequate\n\n8 Ways to Control Your Triglycerides (and Cholesterol) With Lifestyle Changes\n1. Avoid excess sugar\n2. Resist refined foods\n3. Add more fiber to your diet\n4. Choose healthy fats over saturated fats.\n5. Know the dangers of trans fats\n6. Cut back on alcohol\n7. Exercise\n8. Control your weight.\n");
+  }
+  printf("\n\n\nEnter your units (Mg/d) :\n2.Total chlorestrol : ");
+  scanf("%d" , &tcl);
+     if (tcl <= 255 && tcl >= 145)
+     {
+          printf("\tUnder control, Passed\n\n\n");
+     } 
+     else 
+     {
+          printf("Your total chlorestrol level is not upto the mark\n\n8 Ways to Control Your total chlorestrol With Lifestyle Changes\n1. Avoid excess sugar\n2. Resist refined foods\n3. Add more fiber to your diet\n4. Choose healthy fats over saturated fats.\n5. Know the dangers of trans fats\n6. Cut back on alcohol\n7. Exercise\n8. Control your weight. \n\n\n");
+     }
+     printf("\n\n\nEnter your units (Mg/d) :\n3.HDL (Good) Cholestrol : ");
+     scanf("%d" , &hdlc);
+     if (hdlc <= 75 && hdlc >= 35)
+     {
+      printf("\tUnder control, Passed");
+     }
+     else 
+     { 
+     printf("5 Ways to maintain Your HDL Cholesterol :\n\nGet active. Physical activity can boost your HDL level.\n\nLose extra weight. If you're overweight, losing extra pounds can help raise your HDL levels, as well as cut your LDL (Bad) cholesterol levels.\n\nChoose better fats.\n\nAlcohol in moderation.\n\nStop smoking.");
+     }
+     printf("\n\n\nEnter your units (Mg/d) :\n4.LDL (Bad) Cholestrol :  ");
+     scanf("%d" , &ldlc);
+     if (ldlc >= 150)
+     {
+      printf("\tUnder control, Passed");
+     }
+     else
+     {
+      printf("Add these foods to control LDL cholesterol :\n\n\nOats.\n\nBarley and other whole grains.\n\nBeans.\n\nEggplant and okra.\n\nNuts.\n\nVegetable oils.\n\nApples, grapes, strawberries, citrus fruits.\n\nFoods fortified with sterols and stanols.");
+     }
+     printf("\n\n\nEnter your units (Mg/d) :\n4.VLDL Cholestrol :  ");
+     scanf ("%d" , &vldlc);
+     if (vldlc >= 5 && vldlc <= 30 )
+     {
+      printf("\tUnder control, Passed");
+     }
+     else
+     {
+      printf("\n\n1. Eat heart-healthy foods\n\n2. Exercise on most days of the week and increase your physical activity\n\n3. Quit smoking\n\n4. Lose weight\n\n5. Drink alcohol only in moderation\n\n");
+     }
+     }
+
+     if (opt == 3)
+     {
+      printf("\n\nYour chose 3. Diabetes\n\nA pathology test is a test that examines samples of your body's tissues, including your blood, urine, faeces, samples obtained by biopsy. Doctors use this information for diagnosis and treatment of diseases and other conditions.");
+      printf("\n\nSymptoms that Necessitate the Need For PP Test or Postprandial Blood Sugar Test: \nPP blood sugar level test is done to know about your diabetes or insulin disorder.\n\nFrequent urination\n\nSores that heal slowly\n\nBlurred vision\n\nTiredness\n\nFeeling thirsty\nRepeated infections\n\n\n");
+      printf("\n\n Blood Sugar (Fasting) .................70-120 Mg/dl");
+      printf("\n\n Blood Sugar (Postprandial).......................upto 140 Mg/dl");
+      printf("\n\n Blood Sugar (Random)...................upto 150 Mg/dl");
+      printf("\n\n\nEnter your units (Mg/d) :\n1.Blood Sugar (Fasting) : ");
+      scanf("%d" , &bsf);
+      if (bsf <= 120 && bsf >= 70)
+      {
+        printf("\tUnder control, Passed");
+      }
+      else
+      {
+        printf("\nYour Sugar value is not desireable\n");
+        printf("\nThis article looks at 12 simple things you can do to prevent blood sugar spikes.\n\n\n1. Go low-carb. Carbohydrates (carbs) are what cause blood sugar to rise.\n\n2. Eat fewer refined carbs.\n\n3. Reduce your sugar intake.\n\n4. Keep a healthy weight.\n\n5. Exercise more.\n\n6. Eat more fiber\n\n7. Drink more water.\n\n8. Introduce some vinegar into your diet.\n\n\n");
+      }
+      printf("\n\n\nEnter your units (Mg/d) :\n2.Blood Sugar (PP) : ");
+      scanf("%d" , &bsp);
+      if (bsp >= 140)
+      {
+        printf("\tUnder control, Passed");
+      }
+      else
+      {
+        printf("\nYour Sugar value is not desireable\n");
+        printf("\n\nStress Management\n\nAdequate sleep\n\nDon't skip your breakfast\n\nEat more fibre\n\nReduce sugar intake\n\nDrink plenty of water\n\nInclude chromium and magnesium in your diet\n\nTrack your glucose levels regularly\n\n\n");
+      }
+      printf("\n\n\nEnter your units (Mg/d) :\n3.Blood Sugar (Random) : ");
+      scanf("%d" , &bsr);
+      if (bsr >= 150)
+      {
+        printf("\tUnder control, Passed");
+      }
+      else 
+      {
+        printf("\n\nStress Management\n\nAdequate sleep\n\nDon't skip your breakfast\n\nEat more fibre\n\nReduce sugar intake\n\nDrink plenty of water\n\nInclude chromium and magnesium in your diet\n\nTrack your glucose levels regularly\n\n\n");
+      }
+      
+     }
+     if (opt > 3 )
+      {
+        printf("INVALID RESPONSE");
+      }
+
+     } 
